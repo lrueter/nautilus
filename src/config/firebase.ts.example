@@ -1,0 +1,27 @@
+import { initializeApp } from 'firebase/app';
+import { getStorage } from 'firebase/storage';
+
+// Replace these placeholder values with your actual Firebase configuration
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_APP_ID"
+};
+
+const app = initializeApp(firebaseConfig);
+export const storage = getStorage(app);
+
+export const FOLDER_MAPPING = {
+  'Switchboard Layout': 'swl',
+  'Wiring Diagram': 'wid',
+  'Cable Routing': 'car',
+  'Cable Schedule': 'cas',
+  'Protection Schedule': 'prs',
+  'Installation Zones': 'inz',
+  'Photos': 'img'
+} as const;
+
+export type Category = keyof typeof FOLDER_MAPPING; 

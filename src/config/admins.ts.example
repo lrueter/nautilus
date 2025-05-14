@@ -1,0 +1,7 @@
+// List of admin email addresses that have full access to the application
+// Copy this file to admins.ts and add your admin email addresses
+export const ADMIN_EMAILS: string[] = [
+  // Add your admin email addresses here, for example:
+  // 'admin@yourcompany.com',
+  // 'manager@yourcompany.com'
+]; 

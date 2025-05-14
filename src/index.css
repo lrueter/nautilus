@@ -1,0 +1,139 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Photo Gallery Styles */
+.react-photo-gallery--gallery {
+  margin: 0 !important;
+}
+
+.react-photo-gallery--gallery img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Image Gallery Styles */
+.image-gallery {
+  width: 100%;
+  height: auto;
+}
+
+.image-gallery-slide {
+  background: #f5f5f5;
+}
+
+.image-gallery-thumbnail {
+  width: 120px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.image-gallery-thumbnail-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.image-gallery-fullscreen-button,
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.image-gallery-fullscreen-button:hover,
+.image-gallery-left-nav:hover,
+.image-gallery-right-nav:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.image-gallery-description {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+}
