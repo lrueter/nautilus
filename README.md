@@ -120,6 +120,14 @@ src/
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+## Backlog
+
+### Authentication Improvements
+- [ ] Implement passkey authentication using [firebase-web-authn](https://github.com/gavinsawyer/firebase-web-authn)
+  - This Firebase extension provides native WebAuthn (passkey) support
+  - Supports both first-factor (1FA) and second-factor (2FA) authentication
+  - Easy integration with existing Firebase Auth setup
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
