@@ -23,6 +23,7 @@ import {
   Security as SecurityIcon,
   Map as MapIcon,
   PhotoLibrary as PhotoIcon,
+  Engineering as EngineeringIcon,
   Logout as LogoutIcon
 } from '@mui/icons-material';
 import FileList from './components/FileList';
@@ -39,6 +40,7 @@ const CATEGORIES = [
   { id: 'CAS', label: 'Cable Schedule', icon: ScheduleIcon },
   { id: 'PRS', label: 'Protection Schedule', icon: SecurityIcon },
   { id: 'INZ', label: 'Installation Zones', icon: MapIcon },
+  { id: 'ICT', label: 'Installation Commissioning', icon: EngineeringIcon },
   { id: 'Photos', label: 'Photos', icon: PhotoIcon }
 ] as const;
 
