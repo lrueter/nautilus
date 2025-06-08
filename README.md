@@ -20,6 +20,7 @@ The documentation is organized into the following categories:
 - Cable Schedule (cas)
 - Protection Schedule (prs)
 - Installation Zones (inz)
+- Installation Commissioning (ict)
 - Photos (img)
 
 ## Prerequisites
@@ -52,6 +53,7 @@ npm install
      - cas (Cable Schedule)
      - prs (Protection Schedule)
      - inz (Installation Zones)
+     - ict (Installation Commissioning)
      - img (Photos)
 
 4. Configure Firebase:
@@ -65,6 +67,7 @@ npm install
      - cas (Cable Schedule)
      - prs (Protection Schedule)
      - inz (Installation Zones)
+     - ict (Installation Commissioning)
      - img (Photos)
    - Copy your Firebase configuration from the Firebase Console
    - Copy `src/config/firebase.ts.example` to `src/config/firebase.ts`
